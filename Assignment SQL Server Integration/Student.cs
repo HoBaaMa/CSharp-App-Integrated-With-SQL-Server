@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assignment_SQL_Server_Integration
 {
-    public class Student
+    internal class Student
     {
         public int StudentID { get; set; }
         public string FullName { get; set; }

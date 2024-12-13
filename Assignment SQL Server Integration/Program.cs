@@ -50,7 +50,7 @@ namespace Assignment_SQL_Server_Integration
                                 repository.AddStudent(firstName, lastName, birthDate, grade);
 
                                 Console.ForegroundColor = ConsoleColor.Green;
-                                Console.WriteLine("\nStudent added to the database successfully!");
+                                Console.WriteLine("\nStudent added to the database successfully!\n");
                                 Console.ResetColor();
                                 break;
 
@@ -79,6 +79,12 @@ namespace Assignment_SQL_Server_Integration
                                 break;
 
                             case 4:
+                                Console.Write("Enter The Student's Birth Date (YY-MM-DD): ");
+
+                                DateTime birthDate1 = DateTime.Parse(Console.ReadLine());
+
+                                Console.WriteLine("The Student's Age is: " + repository.CalculateAge(birthDate1) + '\n');
+
                                 break;
 
                             case 5:
